@@ -15,6 +15,9 @@ use PhpOffice\PhpSpreadsheet\Reader\Xlsx as reader;
 use PhpOffice\PhpSpreadsheet\Style\Fill;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 
+$arr = getenv("TEST");
+echo 'value is: ' . $arr;
+
 #endregion
 #region Excel Rows (Address)
 $sNameRow = 'A';
@@ -449,7 +452,7 @@ function sendEmail($bin, $pickReturn)
 			}
 		}
 
-		$mail->addAddress('MichaelMcMillan@upak.net');
+		// $mail->addAddress('MichaelMcMillan@upak.net');
 		// $mail->addAddress('Dispatch@upak.net');
 		$mail->addAddress('belalkaoukji@upak.net');
 	
