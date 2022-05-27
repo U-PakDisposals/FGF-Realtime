@@ -15,8 +15,7 @@ use PhpOffice\PhpSpreadsheet\Reader\Xlsx as reader;
 use PhpOffice\PhpSpreadsheet\Style\Fill;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 
-$arr = getenv("TEST");
-echo 'value is: ' . $arr;
+echo getenv("BLEND");
 
 #endregion
 #region Excel Rows (Address)
